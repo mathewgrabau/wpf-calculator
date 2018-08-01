@@ -59,15 +59,60 @@ namespace Calculator
             }
         }
 
-        private void SevenButton_Click(object sender, RoutedEventArgs e)
+        private void OperationButton_Click(object sender, RoutedEventArgs e)
         {
+            if (double.TryParse(ResultLabel.Content.ToString(), out _lastNumber))
+            {
+                ResultLabel.Content = "0";  // Clearing it back to receive the next button.
+            }
+        }
+
+        private void NumberButton_Click(object sender, RoutedEventArgs e)
+        {
+            var selectedValue = 0;
+
+            if (sender == OneButton)
+                selectedValue = 1;
+            if (sender == TwoButton)
+            {
+                selectedValue = 2;
+            }
+            if (sender == ThreeButton)
+            {
+                selectedValue = 3;
+            }
+            if (sender == FourButton)
+            {
+                selectedValue = 4;
+            }
+            if (sender == FiveButton)
+            {
+                selectedValue = 5;
+            }
+            if (sender == SixButton)
+            {
+                selectedValue = 6;
+            }
+            if (sender == SevenButton)
+            {
+                selectedValue = 7;
+            }
+            if (sender == EightButton)
+            {
+                selectedValue = 8;
+            }
+            if (sender == NineButton)
+            {
+                selectedValue = 9;
+            }
+
             if (ResultLabel.Content.ToString() == "0")
             {
-                ResultLabel.Content = "7";
+                ResultLabel.Content = $"{ selectedValue }";
             }
             else
             {
-                ResultLabel.Content = $"{ResultLabel.Content.ToString()}7";
+                ResultLabel.Content = $"{ResultLabel.Content.ToString()}{selectedValue}";
             }
 
             _lastNumber = double.Parse(ResultLabel.Content.ToString());

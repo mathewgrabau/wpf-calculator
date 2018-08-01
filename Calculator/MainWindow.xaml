@@ -25,20 +25,20 @@
         <Button x:Name="ClearButton" Content="AC" Grid.Row="1" />
         <Button x:Name="NegativeButton" Content="+/-" Grid.Column="1" Grid.Row="1" />
         <Button x:Name="PercentButton" Content="%" Grid.Column="2" Grid.Row="1" />
-        <Button x:Name="DivideButton" Content="/" Grid.Column="3" Grid.Row="1" />
-        <Button x:Name="SevenButton" Content="7" Grid.Column="0" Grid.Row="2" Click="SevenButton_Click" />
-        <Button x:Name="EightButton" Content="8" Grid.Column="1" Grid.Row="2" />
-        <Button x:Name="NineButton" Content="9" Grid.Column="2" Grid.Row="2" />
-        <Button x:Name="MultiplyButton" Content="*" Grid.Column="3" Grid.Row="2" />
-        <Button x:Name="FourButton" Content="4" Grid.Column="0" Grid.Row="3" />
-        <Button x:Name="FiveButton" Content="5" Grid.Column="1" Grid.Row="3" />
-        <Button x:Name="SixButton" Content="6" Grid.Column="2" Grid.Row="3" />
-        <Button x:Name="SubtractButton" Content="-" Grid.Column="3" Grid.Row="3" />
-        <Button x:Name="OneButton" Content="1" Grid.Column="0" Grid.Row="4" />
-        <Button x:Name="TwoButton" Content="2" Grid.Column="1" Grid.Row="4" />
-        <Button x:Name="ThreeButton" Content="3" Grid.Column="2" Grid.Row="4" />
-        <Button x:Name="AddButton" Content="+" Grid.Column="3" Grid.Row="4" />
-        <Button x:Name="ZeroButton" Content="0" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="5" />
+        <Button x:Name="DivideButton" Content="/" Grid.Column="3" Grid.Row="1" Click="OperationButton_Click" />
+        <Button x:Name="SevenButton" Content="7" Grid.Column="0" Grid.Row="2" Click="NumberButton_Click" />
+        <Button x:Name="EightButton" Content="8" Grid.Column="1" Grid.Row="2" Click="NumberButton_Click" />
+        <Button x:Name="NineButton" Content="9" Grid.Column="2" Grid.Row="2" Click="NumberButton_Click" />
+        <Button x:Name="MultiplyButton" Content="*" Grid.Column="3" Grid.Row="2" Click="OperationButton_Click" />
+        <Button x:Name="FourButton" Content="4" Grid.Column="0" Grid.Row="3" Click="NumberButton_Click" />
+        <Button x:Name="FiveButton" Content="5" Grid.Column="1" Grid.Row="3" Click="NumberButton_Click" />
+        <Button x:Name="SixButton" Content="6" Grid.Column="2" Grid.Row="3" Click="NumberButton_Click"  />
+        <Button x:Name="SubtractButton" Content="-" Grid.Column="3" Grid.Row="3" Click="OperationButton_Click" />
+        <Button x:Name="OneButton" Content="1" Grid.Column="0" Grid.Row="4" Click="NumberButton_Click" />
+        <Button x:Name="TwoButton" Content="2" Grid.Column="1" Grid.Row="4" Click="NumberButton_Click" />
+        <Button x:Name="ThreeButton" Content="3" Grid.Column="2" Grid.Row="4" Click="NumberButton_Click" />
+        <Button x:Name="AddButton" Content="+" Grid.Column="3" Grid.Row="4" Click="OperationButton_Click" />
+        <Button x:Name="ZeroButton" Content="0" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="5" Click="NumberButton_Click" />
         <Button x:Name="DecimalButton" Content="." Grid.Column="2" Grid.Row="5" />
         <Button x:Name="EqualsButton" Content="=" Grid.Column="3" Grid.Row="5" />
     </Grid>
