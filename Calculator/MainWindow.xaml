@@ -39,7 +39,7 @@
         <Button x:Name="ThreeButton" Content="3" Grid.Column="2" Grid.Row="4" Click="NumberButton_Click" />
         <Button x:Name="AddButton" Content="+" Grid.Column="3" Grid.Row="4" Click="OperationButton_Click" />
         <Button x:Name="ZeroButton" Content="0" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="5" Click="NumberButton_Click" />
-        <Button x:Name="DecimalButton" Content="." Grid.Column="2" Grid.Row="5" />
+        <Button x:Name="DecimalButton" Content="." Grid.Column="2" Grid.Row="5" Click="DecimalButton_Click" />
         <Button x:Name="EqualsButton" Content="=" Grid.Column="3" Grid.Row="5" />
     </Grid>
 </Window>
